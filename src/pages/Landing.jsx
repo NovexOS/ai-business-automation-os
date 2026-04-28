@@ -11,46 +11,30 @@ return(
 
 {/* HERO SECTION */}
 
-<section style={{
-display:"flex",
-justifyContent:"space-between",
-alignItems:"center",
-padding:"80px"
-}}>
+<section className="hero">
 
-<div>
+<div className="hero-text">
 
-<h1 style={{fontSize:"48px"}}>
+<h1 className="hero-title">
 Automate Your Business with AI
 </h1>
 
-<p style={{marginTop:"20px"}}>
+<p className="hero-desc">
 Capture leads, reply instantly and automate follow-ups.
 </p>
 
-<div style={{marginTop:"30px"}}>
+<div className="hero-buttons">
 
 <Link to="/signup">
-<button style={{
-padding:"14px 28px",
-background:"#5b5bf7",
-color:"white",
-border:"none",
-borderRadius:"6px"
-}}>
+<button className="btn-primary">
 Start Free
 </button>
 </Link>
 
 <Link to="/login">
-
-<button style={{
-padding:"14px 28px",
-marginLeft:"10px"
-}}>
+<button className="btn-secondary">
 See Demo
 </button>
-
 </Link>
 
 </div>
@@ -58,8 +42,9 @@ See Demo
 </div>
 
 <img
+className="hero-image"
 src="https://cdn-icons-png.flaticon.com/512/4712/4712035.png"
-width="280"
+alt="AI automation"
 />
 
 </section>
