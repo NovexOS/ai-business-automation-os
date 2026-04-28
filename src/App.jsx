@@ -18,51 +18,33 @@ import EmailIntegrations from "./pages/EmailIntegrations"
 import Notifications from "./pages/Notifications"
 import TeamMembers from "./pages/TeamMembers"
 
-function App(){
+function App() {
+  return (
+    <Routes>
 
-return(
+      <Route path="/" element={<Landing />} />
+      <Route path="/signup" element={<Signup />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/setup" element={<BusinessSetup />} />
 
+      <Route path="/dashboard" element={<Dashboard />} />
+      <Route path="/leads" element={<Leads />} />
+      <Route path="/leads/:id" element={<LeadDetails />} />
 
+      <Route path="/automation" element={<Automation />} />
+      <Route path="/messages" element={<Messages />} />
+      <Route path="/analytics" element={<Analytics />} />
 
-<Routes>
+      <Route path="/integrations" element={<Integrations />} />
+      <Route path="/settings" element={<Settings />} />
+      <Route path="/profile" element={<Profile />} />
 
-<Route path="/" element={<Landing/>} />
+      <Route path="/email-integrations" element={<EmailIntegrations />} />
+      <Route path="/notifications" element={<Notifications />} />
+      <Route path="/team-members" element={<TeamMembers />} />
 
-<Route path="/signup" element={<Signup/>} />
-
-<Route path="/login" element={<Login/>} />
-
-<Route path="/setup" element={<BusinessSetup/>} />
-
-<Route path="/dashboard" element={<Dashboard/>} />
-
-<Route path="/leads" element={<Leads/>} />
-
-<Route path="/leads/:id" element={<LeadDetails/>} />
-
-<Route path="/automation" element={<Automation/>} />
-
-<Route path="/messages" element={<Messages/>} />
-
-<Route path="/analytics" element={<Analytics/>} />
-
-<Route path="/integrations" element={<Integrations />} />
-
-<Route path="/settings" element={<Settings/>} />
-
-<Route path="/profile" element={<Profile/>} />
-
-<Route path="/email-integrations" element={<EmailIntegrations/>}/>
-
-<Route path="/notifications" element={<Notifications/>}/>
-
-<Route path="/team-members" element={<TeamMembers/>}/>
-
-</Routes>
-
-
-)
-
+    </Routes>
+  )
 }
 
 export default App
